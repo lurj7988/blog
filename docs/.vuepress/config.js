@@ -74,6 +74,8 @@ module.exports = {
                     collapsable: true,
                     children: [
                         '/backend/java/',
+                        '/backend/java/qsv/',
+                        '/backend/java/qsv/java.md'
                     ]
                 }
             ],
