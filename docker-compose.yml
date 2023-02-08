@@ -1,0 +1,9 @@
+version: '2.0'
+services:
+  blog:
+    build: 
+      context: ./
+      dockerfile: dockerfile
+    image: lurj/blog
+    container_name: blog
+    network_mode: host
