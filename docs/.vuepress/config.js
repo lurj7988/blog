@@ -34,33 +34,35 @@ module.exports = {
             {
                 text: '前言技术',
                 items: [
-                    { text: 'text2img', link: '/ai/text2image/' },
+                    { text: 'Stable Diffusion', link: '/ai/text2image/sd/' },
                 ]
             },
-            {
-                text: '前端技术',
-                items: [
-                    { text: 'Vue', link: '/frontend/vue/' },
-                ]
-            },
+            // {
+            //     text: '前端技术',
+            //     items: [
+            //         { text: 'Vue', link: '/frontend/vue/' },
+            //     ]
+            // },
             {
                 text: '后端技术',
                 items: [
                     { text: 'Java', link: '/backend/java/' },
-                    { text: 'Python', link: '/backend/python/' },
-                    { text: 'Go', link: '/go/' },
-                    { text: 'NetCore', link: '/netcore/' }
+                    { text: '微服务专题', link: '/backend/cloud/' },
+                    { text: 'OfficeWeb', link: '/backend/officeweb/' },
+                    // { text: 'Python', link: '/backend/python/' },
+                    // { text: 'Go', link: '/go/' },
+                    // { text: 'NetCore', link: '/netcore/' }
                 ]
             },
-            {
-                text: 'DevOps',
-                items: [
-                    { text: 'DevOps', link: '/devops/' },
-                    { text: 'Jenkins', link: '/jenkins/' },
-                    { text: 'Docker', link: '/docker/' },
-                    { text: 'Linux', link: '/linux/' }
-                ]
-            }
+            // {
+            //     text: 'DevOps',
+            //     items: [
+            //         { text: 'DevOps', link: '/devops/' },
+            //         { text: 'Jenkins', link: '/jenkins/' },
+            //         { text: 'Docker', link: '/docker/' },
+            //         { text: 'Linux', link: '/linux/' }
+            //     ]
+            // }
         ],
         sidebar: {
             '/main/': [
@@ -85,23 +87,43 @@ module.exports = {
                     ]
                 }
             ],
-            '/backend/python/': [
+            '/backend/cloud/': [
                 {
-                    title: 'Python',
-                    link: '/backend/python/',
+                    title: '微服务专题',
+                    link: '/backend/cloud/',
                     collapsable: true,
                     children: [
-                        '/backend/python/',
+                        '/backend/cloud/'
                     ]
                 }
             ],
-            '/ai/text2image/': [
+            '/backend/officeweb/': [
                 {
-                    title: 'Text2Image',
-                    link: '/ai/text2image/',
+                    title: 'OfficeWeb',
+                    link: '/backend/officeweb/',
                     collapsable: true,
                     children: [
-                        '/ai/text2image/',
+                        '/backend/officeweb/'
+                    ]
+                }
+            ],
+            // '/backend/python/': [
+            //     {
+            //         title: 'Python',
+            //         link: '/backend/python/',
+            //         collapsable: true,
+            //         children: [
+            //             '/backend/python/',
+            //         ]
+            //     }
+            // ],
+            '/ai/text2image/': [
+                {
+                    title: 'Stable Diffusion',
+                    link: '/ai/text2image/sd/',
+                    collapsable: true,
+                    children: [
+                        '/ai/text2image/sd/',
                         '/ai/text2image/sd/sd-1.md'
                     ]
                 }
