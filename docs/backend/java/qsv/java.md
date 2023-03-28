@@ -388,12 +388,10 @@ export:D:\workspace\c\风吹半夏第1集-蓝光1080P-第7段.flv
 
 该项目采用`c`语言和`Qt`开发，本文作者根据原理采用`Java`进行了翻写，仅供学习和参考。如果要用于实际应用，请使用原项目提供的工具，可以将`qsv`文件转换为`flv`或`mp4`格式。
 
-工具较大且`github`下载速度较慢，可以直接关注公众号回复QSV获取。
+工具较大且`github`下载速度较慢，可以关注公众号`OriginalTech`回复QSV获取。
+
+[​查看原文](https://mp.weixin.qq.com/s/2uKDdwMfUuJVNheaTTliXw)
 
 ## 往期系列
 
-[​揭秘爱奇艺qsv文件背后的秘密](http://mp.weixin.qq.com/s?__biz=Mzg2Njg5NDQzOQ==&mid=2247483861&idx=1&sn=28235dde16f2694f372d62471cecfed7&chksm=ce4296ddf9351fcbffd2e4c46a8ce519a0920f249e8560b7c7c7086ff6808b843233c609ddd2#rd)
-
-## 后记
-
-最后，`QSV`文件系列有视频解说，可以关注作者抖音号查看。
+[​揭秘爱奇艺qsv文件背后的秘密](https://mp.weixin.qq.com/s/eYJgqZlqKIR3r3wXbqATfA)

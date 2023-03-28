@@ -32,6 +32,12 @@ module.exports = {
         nav: [
             { text: '个人简介', link: '/main/' },
             {
+                text: '前言技术',
+                items: [
+                    { text: 'text2img', link: '/ai/text2image/' },
+                ]
+            },
+            {
                 text: '前端技术',
                 items: [
                     { text: 'Vue', link: '/frontend/vue/' },
@@ -86,6 +92,17 @@ module.exports = {
                     collapsable: true,
                     children: [
                         '/backend/python/',
+                    ]
+                }
+            ],
+            '/ai/text2image/': [
+                {
+                    title: 'Text2Image',
+                    link: '/ai/text2image/',
+                    collapsable: true,
+                    children: [
+                        '/ai/text2image/',
+                        '/ai/text2image/sd/sd-1.md'
                     ]
                 }
             ]            
