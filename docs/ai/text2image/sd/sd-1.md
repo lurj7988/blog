@@ -4,6 +4,25 @@
 
 ## 安装git
 
+## 安装环境
+
+1. Python 3.10.6 and Git:
+    - Windows: 下载并运行Python 3.10.6的安装程序([webpage](https://www.python.org/downloads/release/python-3106/), [exe](https://www.python.org/ftp/python/3.10.6/python-3.10.6-amd64.exe), 或者 [win7 version](https://github.com/adang1345/PythonWin7/raw/master/3.10.6/python-3.10.6-amd64-full.exe)) 以及 git 工具 ([webpage](https://git-scm.com/download/win))
+    - Linux (Debian-based): `sudo apt install wget git python3 python3-venv`
+    - Linux (Red Hat-based): `sudo dnf install wget git python3`
+    - Linux (Arch-based): `sudo pacman -S wget git python3`
+2. 从仓库下载代码:
+    - 首选方法: 使用git命令: `git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git`.
+        - 之所以使用这种方法，是因为它允许您通过运行`git pull`来更新。
+        - 这些命令可以在文件资源管理器中右键单击并选择“Git Bash here”后打开的命令行窗口中使用。
+    - 替代方法: 点击 "Code" (绿色按钮) -> "Download ZIP" 选择这个仓库的`main`分支。
+        - 即使你选择这样做，你仍然需要安装git。
+        - 要更新，您必须再次下载zip并替换文件。
+3. Stable Diffusion基础模型, 一个`.ckpt`后缀的文件下载并放在`models/Stable-diffusion`目录下。
+    - [官方下载](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original)
+    - [文件存储](https://drive.yerf.org/wl/?id=EBfTrmcCCUAGaQBXVIj5lJmEhjoP1tgl)
+    - 磁力链接 (magnet:?xt=urn:btih:3a4a612d75ed088ea542acac52f9f45987488d1c&dn=sd-v1-4.ckpt&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337)
+
 ## Installation and Running
 
 Make sure the required [dependencies](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Dependencies) are met and follow the instructions available for both [NVidia](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-NVidia-GPUs) (recommended) and [AMD](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-AMD-GPUs) GPUs.

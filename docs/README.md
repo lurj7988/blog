@@ -12,5 +12,8 @@ features:
   details: Java、Python、Go、Netcore、C/C++
 - title: DevOps
   details: Jenkins、Docker、Maven、Linux 
-footer: MIT Licensed | Copyright © 2022-present lurj
 ---
+
+::: slot footer
+MIT Licensed | Copyright © 2022-present | [苏ICP备2023002831号](https://beian.miit.gov.cn/)
+:::
