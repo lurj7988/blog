@@ -1,5 +1,5 @@
 ---
-title: 主要功能与配置演示
+title: 人工智能
 index: false
 icon: discover
 category:
@@ -9,3 +9,4 @@ category:
 ## 目录
 
 
+1. [Stable Diffusion](./sd/README.md)
