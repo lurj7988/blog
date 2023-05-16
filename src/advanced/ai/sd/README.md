@@ -3,7 +3,7 @@ title: Stable Diffusion
 index: false
 icon: discover
 category:
-  - 使用指南
+  - 前沿技术
 ---
 
 # 目录

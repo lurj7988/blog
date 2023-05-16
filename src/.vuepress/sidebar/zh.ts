@@ -35,6 +35,13 @@ export const zhSidebar = sidebar({
   ],
   "/backend/": [
     "",
+    {
+      text: "视频技术",
+      icon: "creative",
+      collapsible: true,
+      prefix: "video/",
+      children: "structure",
+    },    
   ],  
   "/ops/": [
     "",
@@ -46,5 +53,6 @@ export const zhSidebar = sidebar({
       link: "devops/",
       children: "structure",
     },
+    "grafana"
   ],  
 });

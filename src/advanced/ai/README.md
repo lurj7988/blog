@@ -3,7 +3,7 @@ title: 人工智能
 index: false
 icon: discover
 category:
-  - 使用指南
+  - 前沿技术
 ---
 
 ## 目录
