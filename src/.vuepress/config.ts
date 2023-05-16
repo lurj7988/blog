@@ -6,12 +6,12 @@ export default defineUserConfig({
   base: "/",
 
   locales: {
-    "/": {
+    "/en/": {
       lang: "en-US",
       title: "Personal Blog",
       description: "A personal blog for lurj",
     },
-    "/zh/": {
+    "/": {
       lang: "zh-CN",
       title: "个人博客",
       description: "陆仁杰的个人博客",
