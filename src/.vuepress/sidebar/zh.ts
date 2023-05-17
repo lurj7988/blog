@@ -53,6 +53,7 @@ export const zhSidebar = sidebar({
       link: "devops/",
       children: "structure",
     },
-    "grafana"
+    "grafana",
+    "git"
   ],  
 });
