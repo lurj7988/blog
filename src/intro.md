@@ -1,6 +1,6 @@
 ---
 icon: info
-cover: /assets/images/cover3.jpg
+cover: /assets/images/wechat.png
 ---
 
 # 个人简介
