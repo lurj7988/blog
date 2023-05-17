@@ -6,6 +6,7 @@ title: Blog Home
 heroImage: /logo.svg
 heroText: Original Tech
 tagline: Stay hungry. Stay foolish.
+bgImage: /clouds-3840x2160-abstract-sunset-4k-23271.jpg
 heroFullScreen: true
 projects:
   - icon: project

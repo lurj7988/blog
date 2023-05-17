@@ -6,37 +6,73 @@ title: 博客主页
 heroImage: /logo.svg
 heroText: Original Tech
 tagline: 求知若饥，虚心若愚
+bgImage: /clouds-3840x2160-abstract-sunset-4k-23271.jpg
 heroFullScreen: true
 projects:
-  - icon: project
-    name: 项目名称
-    desc: 项目详细描述
-    link: https://你的项目链接
+  - icon: link
+    name: 高清壁纸
+    desc: 高清壁纸
+    link: https://wallpapershome.com/
 
   - icon: link
-    name: 链接名称
-    desc: 链接详细描述
-    link: https://链接地址
+    name: openv2
+    desc: openv2
+    link: https://www.openv2.icu/
 
-  - icon: book
-    name: 书籍名称
-    desc: 书籍详细描述
-    link: https://你的书籍链接
+  - icon: /huggingface.svg
+    name: huggingface
+    desc: huggingface
+    link: https://huggingface.co/
 
-  - icon: article
-    name: 文章名称
-    desc: 文章详细描述
-    link: https://你的文章链接
+  - icon: link
+    name: civitai
+    desc: civitai
+    link: https://civitai.com/
+
+  - icon: link
+    name: svgrepo
+    desc: svgrepo
+    link: https://www.svgrepo.com/
+
+  - icon: link
+    name: freedownloadlogo
+    desc: freedownloadlogo
+    link: https://www.freedownloadlogo.com/cn/
+
+  - icon: link
+    name: favicon在线生成
+    desc: favicon在线生成
+    link: https://www.logosc.cn/logo/favicon
+
+  - icon: /docker.svg
+    name: docker
+    desc: docker
+    link: https://hub.docker.com/
+  
+  - icon: wechat
+    name: 微信公众号平台
+    desc: 微信公众号平台
+    link: https://www.npmjs.com/
+
+  - icon: npm
+    name: npm
+    desc: npm
+    link: https://mp.weixin.qq.com/
 
   - icon: friend
-    name: 伙伴名称
-    desc: 伙伴详细介绍
-    link: https://你的伙伴链接
+    name: Mr.Hope
+    desc: Mr.Hope
+    link: https://mrhope.site/
+
+  - icon: project
+    name: theme-hope
+    desc: theme-hope
+    link: https://theme-hope.vuejs.press/    
 
   - icon: /logo.svg
-    name: 自定义项目
-    desc: 自定义详细介绍
-    link: https://你的自定义链接
+    name: Github Page
+    desc: Github Page
+    link: https://lurj7988.github.io/blog/
 
 footer: <a href="https://beian.miit.gov.cn/">苏ICP备2023002831号</a>
 ---

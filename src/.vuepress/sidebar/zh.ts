@@ -23,7 +23,7 @@ export const zhSidebar = sidebar({
     "",
     {
       text: "Stable Diffusion",
-      icon: "creative",
+      icon: "advance",
       collapsible: true,
       prefix: "ai/sd/",
       link: "ai/sd/",
@@ -37,7 +37,7 @@ export const zhSidebar = sidebar({
     "",
     {
       text: "视频技术",
-      icon: "creative",
+      icon: "play",
       collapsible: true,
       prefix: "video/",
       children: "structure",
@@ -47,7 +47,7 @@ export const zhSidebar = sidebar({
     "",
     {
       text: "DevOps",
-      icon: "creative",
+      icon: "ci",
       collapsible: true,
       prefix: "devops/",
       link: "devops/",

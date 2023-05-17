@@ -1,6 +1,6 @@
 ---
 title: git命令
-icon: markdown
+icon: git
 order: 1
 category:
   - 测试运维

@@ -9,6 +9,8 @@ cover: /assets/images/cover3.jpg
 
 熟练掌握Java、C#，熟悉python、go等语言，熟练掌握vue、jquery等前端框架。熟练掌握 spring、springboot以及主流微服务框架。喜欢阅读源码，熟悉 nacos、apollo、seata、nginx、redis等开源中间价原理。精通maven管理并会开发相关插件辅助开发。精通主流数据库sql调优，熟悉JVM调优。精通Jenkins，docker部署和linux操作。精通svn和git进行版本管理。具微服务和DevOps架构设计经验。具备爬虫开发及机器学习基础。
 
+<!-- more -->
+
 ## 工作经历
 
 1. 担任整个业务条线架构师，参与多个产品的架构设计工作,其中包括SAAS化交易平台、竞价系统、App、商城系统等。对架构不合理的产品提出代码重构建议，并对核心代码进行代码审计。参与了重点产品微服务重构，引入领域驱动及组件化的理念。进行多个技术立项的研究，如基于文本相似度分析的标书比对技术、微服务组件openfeign适配公司不同业务场景研究、SOFAARK解决类冲突方案、office365自研方案替换、基于nacos和apollo的配置中心方案等。熟悉公司自研的开发框架，深入理解底层实现逻辑及技术栈。

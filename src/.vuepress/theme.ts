@@ -31,12 +31,12 @@ export default hopeTheme({
       // Dingding: "https://example.com",
       // Discord: "https://example.com",
       // Dribbble: "https://example.com",
-      // Email: "mailto:info@example.com",
+      Email: "naulurenjie@outlook.com",
       // Evernote: "https://example.com",
       // Facebook: "https://example.com",
       // Flipboard: "https://example.com",
-      // Gitee: "https://example.com",
-      // GitHub: "https://example.com",
+      Gitee: "https://gitee.com/supernovas",
+      GitHub: "https://github.com/lurj7988",
       // Gitlab: "https://example.com",
       // Gmail: "mailto:info@example.com",
       // Instagram: "https://example.com",
@@ -51,12 +51,12 @@ export default hopeTheme({
       // Rss: "https://example.com",
       // Steam: "https://example.com",
       // Twitter: "https://example.com",
-      // Wechat: "https://example.com",
+      Wechat: "https://mp.weixin.qq.com/misc/getqrcode?fakeid=3866894439&token=1619631271",
       // Weibo: "https://example.com",
       // Whatsapp: "https://example.com",
       // Youtube: "https://example.com",
-      // Zhihu: "https://example.com",
-      MrHope: ["https://www.lurj7988.cn", MR_HOPE_AVATAR],
+      Zhihu: "https://www.zhihu.com/people/ffitman",
+      // MrHope: ["https://www.lurj7988.cn", MR_HOPE_AVATAR],
     },
   },
 
@@ -74,7 +74,7 @@ export default hopeTheme({
 
       blog: {
         description: "A full stack programmer",
-        intro: "/intro.html",
+        intro: "/en/intro.html",
       },
 
       metaLocales: {
@@ -98,7 +98,7 @@ export default hopeTheme({
 
       blog: {
         description: "一个全栈开发者",
-        intro: "/zh/intro.html",
+        intro: "/intro.html",
       },
 
       // page meta

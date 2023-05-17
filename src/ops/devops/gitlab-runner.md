@@ -1,6 +1,6 @@
 ---
 title: gitlab runner 介绍
-icon: markdown
+icon: gitlab
 order: 1
 category:
   - 测试运维
