@@ -15,6 +15,8 @@ export default hopeTheme({
 
   iconAssets: "iconfont",
 
+  favicon: "/favicon.ico",
+
   logo: "/logo.svg",
 
   repo: "lurj7988/blog",
