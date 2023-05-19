@@ -58,6 +58,8 @@ export default hopeTheme({
       Zhihu: "https://www.zhihu.com/people/ffitman",
       // MrHope: ["https://www.lurj7988.cn", MR_HOPE_AVATAR],
     },
+    avatar: "/assets/images/wechat.png",
+    name: "lurj7988"
   },
 
   locales: {

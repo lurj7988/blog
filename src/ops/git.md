@@ -2,13 +2,12 @@
 title: git命令
 icon: git
 order: 1
+date: 2023-05-19
 category:
   - 测试运维
 tag:
   - git
 ---
-
-# git命令
 
 ```sh
 git remote -v # 显示所有远程仓库

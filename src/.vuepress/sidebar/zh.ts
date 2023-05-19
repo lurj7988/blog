@@ -54,6 +54,8 @@ export const zhSidebar = sidebar({
       children: "structure",
     },
     "grafana",
-    "git"
+    "git",
+    "medusa",
+    "nmap"
   ],  
 });

@@ -1,14 +1,13 @@
 ---
 title: grafana
 icon: markdown
-order: 1
+order: 2
+date: 2023-05-10
 category:
   - 测试运维
 tag:
   - linux
 ---
-
-# grafana+prometheus
 
 ## 部署
 

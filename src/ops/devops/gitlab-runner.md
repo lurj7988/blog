@@ -2,13 +2,13 @@
 title: gitlab runner 介绍
 icon: gitlab
 order: 1
+date: 2023-05-18
 category:
   - 测试运维
 tag:
   - DevOps
 ---
 
-# gitlab runner 介绍
 
 ## 注册
 
