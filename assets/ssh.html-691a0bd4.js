@@ -1,0 +1,9 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as s,c as a,e as d}from"./app-7342d347.js";const n={},i=d(`<h2 id="ssh免密登录" tabindex="-1"><a class="header-anchor" href="#ssh免密登录" aria-hidden="true">#</a> ssh免密登录</h2><h3 id="在本地windows上生成公钥私钥对" tabindex="-1"><a class="header-anchor" href="#在本地windows上生成公钥私钥对" aria-hidden="true">#</a> 在本地Windows上生成公钥私钥对</h3><p>生产目录位于<code>C:\\Users\\naulu\\.ssh</code>，其中<code>id_rsa</code>为私钥，<code>id_rsa.pub</code>为公钥</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>ssh-keygen
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="将公钥放入linux服务器" tabindex="-1"><a class="header-anchor" href="#将公钥放入linux服务器" aria-hidden="true">#</a> 将公钥放入linux服务器</h3><p>将公钥中的内容添加到<code>linux</code>用户目录下的<code>.ssh</code>目录下的<code>authorized_keys</code>文件中。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> ~/.ssh
+<span class="token function">touch</span> authorized_keys
+<span class="token function">vim</span> authorized_keys
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="vscode远程插件指定私钥" tabindex="-1"><a class="header-anchor" href="#vscode远程插件指定私钥" aria-hidden="true">#</a> vscode远程插件指定私钥</h3><div class="language-txt line-numbers-mode" data-ext="txt"><pre class="language-txt"><code>Host 192.168.188.128
+  HostName 192.168.188.128
+  User lurj
+  IdentityFile C:/Users/naulu/.ssh/id_rsa
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,9),c=[i];function r(l,o){return s(),a("div",null,c)}const u=e(n,[["render",r],["__file","ssh.html.vue"]]);export{u as default};
