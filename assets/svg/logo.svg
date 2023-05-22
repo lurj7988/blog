@@ -4,9 +4,9 @@
             <path d="M400 125A 150 150 0 0 0 320 370L 335 375A 70 70 0 0 1 455 355L475 345C 400 330 320 170 400 125" stroke="black"/>
         </g>
     </defs>
-    <circle cx="400" cy="400" r="280" fill="hsla(356, 100%, 41%, 1)" stroke="black" stroke-width="10"></circle>
-    <circle cx="400" cy="400" r="200" fill="hsla(356, 100%, 41%, 1)" stroke="black" stroke-width="5"></circle>
-    <circle cx="400" cy="400" r="70" fill="hsla(356, 100%, 41%, 1)" stroke="black" stroke-width="5"></circle>
+    <circle cx="400" cy="400" r="280" fill="hsla(356, 100%, 41%, 0)" stroke="black" stroke-width="10"></circle>
+    <circle cx="400" cy="400" r="200" fill="hsla(356, 100%, 41%, 0)" stroke="black" stroke-width="5"></circle>
+    <circle cx="400" cy="400" r="70" fill="hsla(356, 100%, 41%, 0)" stroke="black" stroke-width="5"></circle>
     <g id="dou" >
         <use xlink:href="#xly" />
         <use xlink:href="#xly" transform="translate(947,251) rotate(120)" />
