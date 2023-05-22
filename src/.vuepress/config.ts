@@ -11,12 +11,12 @@ export default defineUserConfig({
   locales: {
     "/en/": {
       lang: "en-US",
-      title: "Personal Blog",
+      title: "Original Tech",
       description: "A personal blog for lurj",
     },
     "/": {
       lang: "zh-CN",
-      title: "个人博客",
+      title: "Original Tech",
       description: "陆仁杰的个人博客",
     },
   },

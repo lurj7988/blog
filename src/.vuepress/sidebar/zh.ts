@@ -41,7 +41,14 @@ export const zhSidebar = sidebar({
       collapsible: true,
       prefix: "video/",
       children: "structure",
-    },    
+    },
+    {
+      text: "c++",
+      icon: "c",
+      collapsible: true,
+      prefix: "cpp/",
+      children: "structure",
+    },        
   ],  
   "/ops/": [
     "",
@@ -53,9 +60,10 @@ export const zhSidebar = sidebar({
       link: "devops/",
       children: "structure",
     },
-    "grafana",
     "git",
+    "ssh",
+    "grafana",
     "medusa",
-    "nmap"
+    "nmap",
   ],  
 });

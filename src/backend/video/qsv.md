@@ -21,7 +21,7 @@ QSV是一种加密的视频文件格式。是爱奇艺公司研发的一种视�
 
 QSV文件包含头部信息、索引信息、json字符串以及视频分段信息。
 
-![qsv.jpg](/assets/images/qsv.jpg)
+![qsv.jpg](./assets/images/qsv.jpg)
 
 ## 头部信息
 

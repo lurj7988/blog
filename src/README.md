@@ -3,10 +3,10 @@ home: true
 layout: BlogHome
 icon: home
 title: 博客主页
-heroImage: /logo.svg
+heroImage: /assets/svg/logo.svg
 heroText: Original Tech
 tagline: 求知若饥，虚心若愚
-bgImage: /clouds-3840x2160-abstract-sunset-4k-23271.jpg
+bgImage: /assets/images/background.jpg
 heroFullScreen: true
 projects:
   - icon: link
@@ -19,7 +19,7 @@ projects:
     desc: openv2
     link: https://www.openv2.icu/
 
-  - icon: /huggingface.svg
+  - icon: /assets/svg/huggingface.svg
     name: huggingface
     desc: huggingface
     link: https://huggingface.co/
@@ -44,7 +44,7 @@ projects:
     desc: favicon在线生成
     link: https://www.logosc.cn/logo/favicon
 
-  - icon: /docker.svg
+  - icon: /assets/svg/docker.svg
     name: docker
     desc: docker
     link: https://hub.docker.com/

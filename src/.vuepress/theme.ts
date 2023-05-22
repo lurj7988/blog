@@ -17,7 +17,7 @@ export default hopeTheme({
 
   favicon: "/favicon.ico",
 
-  logo: "/logo.svg",
+  logo: "/assets/svg/logo.svg",
 
   repo: "lurj7988/blog",
 
