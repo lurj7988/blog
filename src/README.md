@@ -29,12 +29,17 @@ projects:
     desc: civitai
     link: https://civitai.com/
 
-  - icon: link
+  - icon: svg
+    name: iconfont
+    desc: iconfont
+    link: https://www.iconfont.cn/
+
+  - icon: svg
     name: svgrepo
     desc: svgrepo
     link: https://www.svgrepo.com/
 
-  - icon: link
+  - icon: svg
     name: freedownloadlogo
     desc: freedownloadlogo
     link: https://www.freedownloadlogo.com/cn/
@@ -69,7 +74,7 @@ projects:
     desc: theme-hope
     link: https://theme-hope.vuejs.press/    
 
-  - icon: /logo.svg
+  - icon: /assets/svg/logo.svg
     name: Github Page
     desc: Github Page
     link: https://lurj7988.github.io/blog/
