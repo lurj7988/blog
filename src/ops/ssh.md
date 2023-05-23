@@ -37,3 +37,31 @@ Host 192.168.188.128
   User lurj
   IdentityFile C:/Users/naulu/.ssh/id_rsa
 ```
+
+### 禁止ssh用户名密码登录
+
+修改 /etc/ssh/sshd_config
+
+```sh
+$ sudo vim /etc/ssh/sshd_config
+...
+# To disable tunneled clear text passwords, change to no here!
+#PasswordAuthentication yes
+#PermitEmptyPasswords no
+PasswordAuthentication no
+
+# Change to no to disable s/key passwords
+#ChallengeResponseAuthentication yes
+ChallengeResponseAuthentication no
+...
+```
+
+把`PasswordAuthentication`改成no，则ssh再发起登录的时候就会提示如下错误：
+
+```sh
+ssh : Permission denied (publickey,gssapi-with-mic)
+```
+
+通常禁止了用户名密码登录之后，需要配置public/private key pair进行登录，即ssh使用-i参数指定private key文件登录。
+
+反之如果ssh使用用户名密码登录遇到上述错误，则需要把 /etc/ssh/sshd_config配置文件里的配置项`PasswordAuthentication`改成`yes`。

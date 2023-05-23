@@ -3,10 +3,10 @@ home: true
 layout: BlogHome
 icon: home
 title: Blog Home
-heroImage: /logo.svg
+heroImage: /assets/svg/logo.svg
 heroText: Original Tech
 tagline: Stay hungry. Stay foolish.
-bgImage: /clouds-3840x2160-abstract-sunset-4k-23271.jpg
+bgImage: /assets/images/background.jpg
 heroFullScreen: true
 projects:
   - icon: project
@@ -34,7 +34,7 @@ projects:
     desc: Detailed description of friend
     link: https://link.to.your.friend
 
-  - icon: /logo.svg
+  - icon: /assets/svg/logo.svg
     name: custom item
     desc: Detailed description of this custom item
     link: https://link.to.your.friend

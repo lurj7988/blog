@@ -19,6 +19,8 @@ export default hopeTheme({
 
   logo: "/assets/svg/logo.svg",
 
+  logoDark: "/assets/svg/logodark.svg",
+
   repo: "lurj7988/blog",
 
   docsDir: "docs",
