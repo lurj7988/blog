@@ -65,5 +65,6 @@ export const zhSidebar = sidebar({
     "grafana",
     "medusa",
     "nmap",
+    "ubuntu",
   ],  
 });
