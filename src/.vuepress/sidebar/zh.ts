@@ -36,11 +36,26 @@ export const zhSidebar = sidebar({
   "/backend/": [
     "",
     {
-      text: "视频技术",
-      icon: "play",
+      text: "java",
+      icon: "java",
       collapsible: true,
-      prefix: "video/",
-      children: "structure",
+      prefix: "java/",
+      children: [
+        {
+          text: "maven",
+          icon: "Apache",
+          collapsible: true,
+          prefix: "maven/",
+          children: "structure",
+        },
+        {
+          text: "jvm",
+          icon: "Apache",
+          collapsible: true,
+          prefix: "jvm/",
+          children: "structure",
+        }
+      ],
     },
     {
       text: "c++",
@@ -48,8 +63,15 @@ export const zhSidebar = sidebar({
       collapsible: true,
       prefix: "cpp/",
       children: "structure",
-    },        
-  ],  
+    },
+    {
+      text: "视频技术",
+      icon: "play",
+      collapsible: true,
+      prefix: "video/",
+      children: "structure",
+    },
+  ],
   "/ops/": [
     "",
     {
@@ -66,5 +88,5 @@ export const zhSidebar = sidebar({
     "medusa",
     "nmap",
     "ubuntu",
-  ],  
+  ],
 });
