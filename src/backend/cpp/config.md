@@ -73,7 +73,7 @@ print(sum);
 
 ## 三、Ubuntu安装环境
 
-```shell
+```bash
 #安装gcc
 sudo apt-get install gcc
 #安装g++
@@ -90,7 +90,7 @@ sudo apt-get install gdb
 
 * 测试代码`main.cpp`：
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -196,7 +196,7 @@ int main(){
 
 ## 五、第一个C++程序
 
-```c++
+```cpp
 #include <iostream>
 
 int main(){
@@ -210,7 +210,7 @@ int main(){
 
 ## 六、附录：vs code 中变量解释
 
-```txt
+```text
 以：/home/Coding/Test/.vscode/tasks.json 为例
 ${workspaceFolder}:表示当前workspace文件夹路径，也即/home/Coding/Test
 ${workspaceRootFolderName}:表示workspace的文件夹名，也即Test
