@@ -219,6 +219,52 @@ OR
 
 :::
 
+> Question：How to translate the Surefire report into another language?
+
+::: info Answer
+
+`@since 3.1.0`[@see](https://github.com/apache/maven-surefire/blob/master/maven-surefire-report-plugin/src/main/java/org/apache/maven/plugins/surefire/report/AbstractSurefireReportMojo.java)The Surefire Report Plugin supports internationalization. The default language is English. To translate the report into another language, you need to create a custom resource bundle and configure the plugin to use it.
+
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-surefire-report-plugin</artifactId>
+  <version>3.1.0</version>
+  <configuration>
+    <customBundle>src/site/custom/surefire-report_cn.properties</customBundle>
+  </configuration>
+</plugin>
+```
+
+The Content of `src/site/custom/surefire-report_cn.properties` is as follows:
+
+```properties
+report.surefire.name=\u5355\u5143\u6d4b\u8bd5
+report.surefire.description=\u62a5\u544a\u9879\u76ee\u7684\u6d4b\u8bd5\u7ed3\u679c\u3002
+report.surefire.title=\u5355\u5143\u6d4b\u8bd5\u62a5\u544a
+
+report.surefire.label.summary=\u603b\u7ed3
+report.surefire.label.tests=\u6d4b\u8bd5\u6570\u91cf
+report.surefire.label.errors=\u9519\u8bef\u6570\u91cf
+report.surefire.label.failures=\u5931\u8d25\u6570\u91cf
+report.surefire.label.skipped=\u8df3\u8fc7\u6570\u91cf
+report.surefire.label.successrate=\u6210\u529f\u7387
+report.surefire.label.time=\u8017\u65f6
+report.surefire.label.packagelist=\u5305\u540d\u6e05\u5355
+report.surefire.label.package=\u5305\u540d
+report.surefire.label.class=\u7c7b\u540d
+report.surefire.label.testcases=\u6d4b\u8bd5\u7528\u4f8b
+report.surefire.label.failuredetails=\u6545\u969c\u8be6\u60c5
+report.surefire.text.note1=\u6ce8\u610f\uff1a\u5931\u8d25\u662f\u9884\u671f\u7684\uff0c\u5e76\u4f7f\u7528\u65ad\u8a00\u8fdb\u884c\u68c0\u67e5\uff0c\u800c\u9519\u8bef\u662f\u610f\u5916\u7684\u3002
+report.surefire.text.note2=\u6ce8\u610f\uff1a\u5305\u7edf\u8ba1\u6570\u636e\u4e0d\u662f\u9012\u5f52\u8ba1\u7b97\u7684\uff0c\u5b83\u4eec\u53ea\u662f\u603b\u7ed3\u4e86\u6240\u6709\u7684\u6d4b\u8bd5\u5957\u4ef6\u6570\u91cf\u3002
+
+report.failsafe.name=\u6545\u969c\u4fdd\u9669
+report.failsafe.description=\u62a5\u544a\u9879\u76ee\u7684\u96c6\u6210\u6d4b\u8bd5\u7ed3\u679c\u3002
+report.failsafe.title=\u6545\u969c\u4fdd\u9669\u62a5\u544a
+```
+
+:::
+
 [Surefire]: https://maven.apache.org/surefire/
 [Apache Maven Surefire]: https://github.com/apache/maven-surefire
 [maven-surefire-plugin]: https://maven.apache.org/surefire/maven-surefire-plugin/usage.html
