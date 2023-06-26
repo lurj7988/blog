@@ -57,12 +57,12 @@ projects:
   - icon: wechat
     name: 微信公众号平台
     desc: 微信公众号平台
-    link: https://www.npmjs.com/
+    link: https://mp.weixin.qq.com/
 
   - icon: npm
     name: npm
     desc: npm
-    link: https://mp.weixin.qq.com/
+    link: https://www.npmjs.com/
 
   - icon: friend
     name: Mr.Hope

@@ -32,6 +32,14 @@ export const zhSidebar = sidebar({
   ],
   "/frontend/": [
     "",
+    {
+      text: "cli",
+      icon: "nodeJS",
+      collapsible: true,
+      prefix: "cli/",
+      link: "cli/",
+      children: "structure",
+    },
   ],
   "/backend/": [
     "",
