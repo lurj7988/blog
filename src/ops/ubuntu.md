@@ -9,6 +9,13 @@ tag:
   - linux
 ---
 
+
+## 学术加速
+
+```sh
+export http_proxy=http://192.168.188.1:7890 && export https_proxy=http://192.168.188.1:7890
+```
+
 ## 磁盘分区与挂载
 
 [参考链接](https://blog.csdn.net/make_progress/article/details/118571375)

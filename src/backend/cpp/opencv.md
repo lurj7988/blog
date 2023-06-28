@@ -1,8 +1,8 @@
 ---
 title: opencv
 icon: pic
-order: 1
-date: 2023-05-22
+order: 3
+date: 2023-06-26
 category:
   - 后端技术
 tag:
@@ -35,6 +35,9 @@ mkdir -p build && cd build
 cmake ../opencv-4.x
 # Build
 cmake --build .
+# Allow N jobs at once; infinite jobs with no arg.
+sudo make -j8
+sudo make -j4
 ```
 
 ### Install

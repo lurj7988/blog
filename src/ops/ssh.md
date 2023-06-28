@@ -9,6 +9,12 @@ tag:
   - linux
 ---
 
+## ubuntu开启SSH远程登录
+
+```sh
+sudo apt install -y openssh-server
+```
+
 ## ssh免密登录
 
 ### 在本地Windows上生成公钥私钥对
