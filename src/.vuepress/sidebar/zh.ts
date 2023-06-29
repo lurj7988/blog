@@ -62,6 +62,13 @@ export const zhSidebar = sidebar({
           collapsible: true,
           prefix: "jvm/",
           children: "structure",
+        },
+        {
+          text: "spring",
+          icon: "support",
+          collapsible: true,
+          prefix: "spring/",
+          children: "structure",
         }
       ],
     },
