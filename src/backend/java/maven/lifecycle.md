@@ -1,5 +1,5 @@
 ---
-title: maven生命周期
+title: lifecycle
 icon: markdown
 order: 1
 date: 2023-05-26
