@@ -1,0 +1,51 @@
+import{_ as n}from"./plugin-vue_export-helper-c27b6911.js";import{o as s,c as a,e}from"./app-cfe0cb73.js";const t={},l=e(`<h2 id="部署" tabindex="-1"><a class="header-anchor" href="#部署" aria-hidden="true">#</a> 部署</h2><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">docker</span> pull bitnami/prometheus:latest
+<span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token parameter variable">--name</span><span class="token operator">=</span>prometheus <span class="token parameter variable">--net</span><span class="token operator">=</span>host <span class="token parameter variable">-v</span> /opt/prometheus.yml:/opt/bitnami/prometheus/conf/prometheus.yml bitnami/prometheus:latest
+<span class="token function">docker</span> pull grafana/grafana
+<span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token parameter variable">--name</span><span class="token operator">=</span>grafana <span class="token parameter variable">--net</span><span class="token operator">=</span>host grafana/grafana:latest
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul><li><code>grafana</code>访问地址<code>http://192.168.220.235:3000/</code>默认密码<code>admin/admin</code></li><li><code>prometheus</code>访问地址<code>http://192.168.220.235:9090/</code></li><li><code>grafana</code>监控模板下载地址<code>https://grafana.com/grafana/dashboards/</code></li></ul><h2 id="监控linux" tabindex="-1"><a class="header-anchor" href="#监控linux" aria-hidden="true">#</a> 监控linux</h2><p>安装包github下载地址<code>https://github.com/prometheus/node_exporter</code></p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>./node_exporter <span class="token operator">&gt;</span>log.file <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&amp;</span>
+<span class="token function">curl</span> http://localhost:9100/metrics
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="prometheus配置" tabindex="-1"><a class="header-anchor" href="#prometheus配置" aria-hidden="true">#</a> prometheus配置</h2><div class="language-yaml line-numbers-mode" data-ext="yml"><pre class="language-yaml"><code><span class="token comment"># my global config</span>
+<span class="token key atrule">global</span><span class="token punctuation">:</span>
+  <span class="token key atrule">scrape_interval</span><span class="token punctuation">:</span> 15s <span class="token comment"># Set the scrape interval to every 15 seconds. Default is every 1 minute.</span>
+  <span class="token key atrule">evaluation_interval</span><span class="token punctuation">:</span> 15s <span class="token comment"># Evaluate rules every 15 seconds. The default is every 1 minute.</span>
+  <span class="token comment"># scrape_timeout is set to the global default (10s).</span>
+
+<span class="token comment"># Alertmanager configuration</span>
+<span class="token key atrule">alerting</span><span class="token punctuation">:</span>
+  <span class="token key atrule">alertmanagers</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">static_configs</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> <span class="token key atrule">targets</span><span class="token punctuation">:</span>
+          <span class="token comment"># - alertmanager:9093</span>
+
+<span class="token comment"># Load rules once and periodically evaluate them according to the global &#39;evaluation_interval&#39;.</span>
+<span class="token key atrule">rule_files</span><span class="token punctuation">:</span>
+  <span class="token comment"># - &quot;first_rules.yml&quot;</span>
+  <span class="token comment"># - &quot;second_rules.yml&quot;</span>
+
+<span class="token comment"># A scrape configuration containing exactly one endpoint to scrape:</span>
+<span class="token comment"># Here it&#39;s Prometheus itself.</span>
+<span class="token key atrule">scrape_configs</span><span class="token punctuation">:</span>
+  <span class="token comment"># The job name is added as a label \`job=&lt;job_name&gt;\` to any timeseries scraped from this config.</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">&quot;prometheus&quot;</span>
+
+    <span class="token comment"># metrics_path defaults to &#39;/metrics&#39;</span>
+    <span class="token comment"># scheme defaults to &#39;http&#39;.</span>
+
+    <span class="token key atrule">static_configs</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">targets</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;localhost:9090&quot;</span><span class="token punctuation">]</span>
+<span class="token comment"># add a new node</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">&quot;prometheus_agent&quot;</span>
+    <span class="token key atrule">static_configs</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">targets</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;192.168.220.216:9100&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;192.168.220.215:9100&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">&#39;mysql&#39;</span>
+    <span class="token key atrule">static_configs</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">targets</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;192.168.220.215:9104&quot;</span><span class="token punctuation">]</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="监控mysql" tabindex="-1"><a class="header-anchor" href="#监控mysql" aria-hidden="true">#</a> 监控mysql</h2><p>安装包github下载地址<code>https://github.com/prometheus/mysqld_exporter</code></p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">touch</span> mysqld_exporter.cnf
+<span class="token function">nohup</span> ./mysqld_exporter --config.my-cnf<span class="token operator">=</span>mysqld_exporter.cnf <span class="token operator">&amp;</span>
+<span class="token function">curl</span> http://localhost:9104/metrics
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-conf line-numbers-mode" data-ext="conf"><pre class="language-conf"><code>[client]
+user=exporter
+password=eXpIHB666QWE!
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-sql line-numbers-mode" data-ext="sql"><pre class="language-sql"><code><span class="token keyword">create</span> <span class="token keyword">user</span> <span class="token string">&#39;exporter&#39;</span><span class="token variable">@&#39;127.0.0.1&#39;</span>  IDENTIFIED <span class="token keyword">BY</span> <span class="token string">&#39;eXpIHB666QWE!&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">GRANT</span> <span class="token keyword">SELECT</span><span class="token punctuation">,</span> PROCESS<span class="token punctuation">,</span> SUPER<span class="token punctuation">,</span> <span class="token keyword">REPLICATION</span> CLIENT<span class="token punctuation">,</span> RELOAD <span class="token keyword">ON</span> <span class="token operator">*</span><span class="token punctuation">.</span><span class="token operator">*</span> <span class="token keyword">TO</span> <span class="token string">&#39;exporter&#39;</span><span class="token variable">@&#39;127.0.0.1&#39;</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,13),o=[l];function p(c,i){return s(),a("div",null,o)}const d=n(t,[["render",p],["__file","grafana.html.vue"]]);export{d as default};
