@@ -69,7 +69,14 @@ export const zhSidebar = sidebar({
           collapsible: true,
           prefix: "spring/",
           children: "structure",
-        }
+        },
+        {
+          text: "junit",
+          icon: "Apache",
+          collapsible: true,
+          prefix: "junit/",
+          children: "structure",
+        }        
       ],
     },
     {
