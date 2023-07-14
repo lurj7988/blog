@@ -419,3 +419,8 @@ maxHistory 可选节点，控制保留的归档文件的最大数量，超出数
   </root>   
 </configuration>  
 ```
+
+## 参考文献
+
+- <http://logback.qos.ch/>
+- <https://zhuanlan.zhihu.com/p/474844021>

@@ -76,7 +76,14 @@ export const zhSidebar = sidebar({
           collapsible: true,
           prefix: "junit/",
           children: "structure",
-        }        
+        },
+        {
+          text: "netty",
+          icon: "support",
+          collapsible: true,
+          prefix: "netty/",
+          children: "structure",
+        }           
       ],
     },
     {
