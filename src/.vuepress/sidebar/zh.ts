@@ -29,6 +29,21 @@ export const zhSidebar = sidebar({
       link: "ai/sd/",
       children: "structure",
     },
+    {
+      text: "python",
+      icon: "advance",
+      collapsible: true,
+      prefix: "python/",
+      children: [
+        {
+          text: "cli",
+          icon: "advance",
+          collapsible: true,
+          prefix: "cli/",
+          children: "structure",
+        }
+      ],
+    },
   ],
   "/frontend/": [
     "",
@@ -98,6 +113,13 @@ export const zhSidebar = sidebar({
       icon: "play",
       collapsible: true,
       prefix: "video/",
+      children: "structure",
+    },
+    {
+      text: "netcore",
+      icon: "software",
+      collapsible: true,
+      prefix: "netcore/",
       children: "structure",
     },
   ],
