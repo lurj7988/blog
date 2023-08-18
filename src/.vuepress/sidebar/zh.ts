@@ -139,5 +139,6 @@ export const zhSidebar = sidebar({
     "medusa",
     "nmap",
     "ubuntu",
+    "filebrowser",
   ],
 });

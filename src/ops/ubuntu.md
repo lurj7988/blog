@@ -1,7 +1,7 @@
 ---
 title: ubuntu
 icon: markdown
-order: 5
+order: 6
 date: 2023-05-23
 category:
   - 测试运维
