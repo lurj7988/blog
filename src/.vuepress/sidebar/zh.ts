@@ -122,6 +122,28 @@ export const zhSidebar = sidebar({
       prefix: "netcore/",
       children: "structure",
     },
+    {
+      text: "物联网",
+      icon: "process",
+      collapsible: true,
+      prefix: "iot/",
+      children: [
+        {
+          text: "ESP32",
+          icon: "remote",
+          collapsible: true,
+          prefix: "esp32/",
+          children: "structure",
+        },
+        {
+          text: "ESP8266",
+          icon: "remote",
+          collapsible: true,
+          prefix: "esp8266/",
+          children: "structure",
+        },        
+      ],
+    },
   ],
   "/ops/": [
     "",
